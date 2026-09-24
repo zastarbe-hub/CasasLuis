@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Casa de Luis, una casa para vivir Donostia despacio.">
+  <title>Casa de Luis | Donostia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Casa de Luis, inicio">
+      <span class="brand-mark">CL</span>
+      <span>Casa de Luis</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menú <span>+</span></button>
+    <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
+      <a class="active" href="index.html">La casa</a>
+      <a href="galeria.html">Galería</a>
+      <a href="#estancia">La estancia</a>
+      <a class="nav-book" href="#reservar">Reservar <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-image" role="img" aria-label="Fachada de una casa costera junto al mar"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow light">Donostia · Euskadi</p>
+        <h1>Una casa para<br><em>vivir despacio.</em></h1>
+        <p class="hero-intro">Piedra, sal y luz del norte. Un refugio familiar a orillas de la bahía de La Concha.</p>
+        <a class="circle-link" href="#estancia" aria-label="Descubrir Casa de Luis"><span>↓</span></a>
+      </div>
+      <div class="hero-side-note">43°19' N<br>2°00' O</div>
+    </section>
+
+    <section class="intro section-grid" id="estancia">
+      <div class="intro-label"><span class="section-number">01</span><span>La estancia</span></div>
+      <div class="intro-copy">
+        <p class="eyebrow">Una pausa en la costa vasca</p>
+        <h2>El lujo de no<br><em>tener prisa.</em></h2>
+        <p>Casa de Luis es una casa de 1912 que mira al Cantábrico desde las faldas de Igeldo. La restauramos respetando sus silencios: la madera que cruje, el sol que entra bajo, el olor a higuera después de la lluvia.</p>
+        <a class="text-link" href="galeria.html">Entrar en la casa <span>→</span></a>
+      </div>
+      <div class="intro-detail">Una habitación para cada manera de descansar.</div>
+    </section>
+
+    <section class="feature-photo">
+      <div class="feature-photo-image"></div>
+      <div class="photo-caption">La terraza · Mirando hacia Getaria</div>
+    </section>
+
+    <section class="details section-grid">
+      <div class="intro-label"><span class="section-number">02</span><span>La casa</span></div>
+      <div class="details-content">
+        <p class="eyebrow">Todo lo que importa</p>
+        <h2>Hecha para<br><em>quedarse.</em></h2>
+        <div class="amenities">
+          <div><strong>06</strong><span>Huéspedes</span></div>
+          <div><strong>03</strong><span>Habitaciones</span></div>
+          <div><strong>02</strong><span>Baños</span></div>
+          <div><strong>01</strong><span>Mar a 5 min</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote-section">
+      <div class="quote-mark">“</div>
+      <blockquote>Hay casas que se visitan.<br><em>Esta se recuerda.</em></blockquote>
+      <p>— Luis, anfitrión</p>
+    </section>
+
+    <section class="booking" id="reservar">
+      <div>
+        <p class="eyebrow light">Ven a verlo</p>
+        <h2>Tu mesa ya<br><em>está puesta.</em></h2>
+      </div>
+      <div class="booking-action">
+        <p>Escoge unos días sin agenda y deja que Donostia haga el resto.</p>
+        <a class="button button-light" href="mailto:hola@casadeluis.eus">Consultar disponibilidad <span>↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="index.html"><span class="brand-mark">CL</span><span>Casa de Luis</span></a>
+    <p>Igueldo, Donostia · 2026</p>
+    <a href="mailto:hola@casadeluis.eus">hola@casadeluis.eus</a>
+  </footer>
+</body>
+</html>

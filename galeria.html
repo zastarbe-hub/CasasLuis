@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Galería de Casa de Luis en Donostia.">
+  <title>Galería | Casa de Luis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="gallery-page">
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Casa de Luis, inicio"><span class="brand-mark">CL</span><span>Casa de Luis</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menú <span>+</span></button>
+    <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
+      <a href="index.html">La casa</a>
+      <a class="active" href="galeria.html">Galería</a>
+      <a href="index.html#estancia">La estancia</a>
+      <a class="nav-book" href="index.html#reservar">Reservar <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="gallery-heading">
+      <div>
+        <p class="eyebrow">Casa de Luis · Galería</p>
+        <h1>La casa,<br><em>por dentro.</em></h1>
+      </div>
+      <p class="gallery-heading-note">Una colección de rincones, texturas y momentos. Desliza la mirada por la casa.</p>
+    </section>
+
+    <section class="gallery-grid" aria-label="Fotografías de la casa">
+      <figure class="gallery-item gallery-item-tall"><img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85" alt="Salón luminoso con sofá de lino y plantas" loading="eager"><figcaption><span>01</span> El salón de la mañana</figcaption></figure>
+      <figure class="gallery-item gallery-item-wide"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1400&q=85" alt="Comedor de madera con vistas al jardín" loading="eager"><figcaption><span>02</span> La mesa larga</figcaption></figure>
+      <figure class="gallery-item"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1000&q=85" alt="Dormitorio sereno con ropa de cama blanca" loading="lazy"><figcaption><span>03</span> Dormir con la ventana abierta</figcaption></figure>
+      <figure class="gallery-item gallery-item-offset"><img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1000&q=85" alt="Detalle de una escalera de madera y piedra" loading="lazy"><figcaption><span>04</span> Madera, piedra, tiempo</figcaption></figure>
+      <figure class="gallery-item gallery-item-wide gallery-item-last"><img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1400&q=85&sat=-15" alt="Interior de Casa de Luis al atardecer" loading="lazy"><figcaption><span>05</span> Cuando cae la tarde</figcaption></figure>
+    </section>
+
+    <section class="gallery-footer">
+      <p>Un lugar sencillo para días extraordinarios.</p>
+      <a class="text-link" href="index.html#reservar">Ven a quedarte <span>→</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="brand" href="index.html"><span class="brand-mark">CL</span><span>Casa de Luis</span></a><p>Igueldo, Donostia · 2026</p><a href="mailto:hola@casadeluis.eus">hola@casadeluis.eus</a></footer>
+</body>
+</html>
