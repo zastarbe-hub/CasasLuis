@@ -82,5 +82,38 @@ blockquote { font-size: clamp(44px, 6vw, 86px); }
 .gallery-item figcaption span { color: var(--clay); }
 .gallery-footer { display: flex; justify-content: space-between; align-items: center; padding: 0 10vw 14vh; }
 .gallery-footer p { font-family: var(--serif); font-size: 31px; margin: 0; }
+
+.donostia-page { background: var(--paper); }
+.donostia-hero {
+  position: relative;
+  min-height: 82vh;
+  display: flex;
+  align-items: flex-end;
+  padding: 18vh 10vw 7vh;
+  background: linear-gradient(90deg, rgba(18, 31, 28, 0.72), rgba(18, 31, 28, 0.22)), url("https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=2000&q=90") center / cover no-repeat;
+  color: #f5f1e9;
+}
+.donostia-hero-content { position: relative; max-width: 720px; }
+.donostia-hero h1 { font-size: clamp(74px, 9vw, 150px); }
+.donostia-lead { max-width: 430px; margin-top: 22px; color: rgba(255,255,255,0.84); font-size: 15px; line-height: 1.7; }
+.donostia-hero-badges { display: flex; flex-wrap: wrap; gap: 15px; margin-top: 30px; }
+.donostia-badge { display: inline-flex; align-items: center; padding: 10px 16px; border: 1px solid rgba(255,255,255,0.55); background: rgba(255,255,255,0.05); color: rgba(255,255,255,0.9); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; }
+.donostia-showcase { padding-top: 16vh; padding-bottom: 14vh; }
+.donostia-copy p:not(.eyebrow) { max-width: 420px; color: var(--muted); line-height: 1.8; }
+.donostia-side-card { align-self: end; justify-self: end; width: min(180px, 100%); padding: 26px 20px; border: 1px solid var(--line); background: rgba(255,255,255,0.3); }
+.donostia-side-card strong { display: block; font-family: var(--serif); font-size: 44px; line-height: 1; color: var(--clay); }
+.donostia-side-card span { display: block; margin-top: 8px; color: var(--muted); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
+.donostia-moments { background: #e5dfd6; padding: 14vh 10vw 16vh; }
+.donostia-moments-header { display: flex; justify-content: space-between; align-items: end; gap: 20px; margin-bottom: 54px; }
+.donostia-moments-header h2 { font-size: clamp(56px, 6vw, 94px); }
+.donostia-moments-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; }
+.donostia-card { background: rgba(255,255,255,0.15); border: 1px solid rgba(41,72,64,0.14); }
+.donostia-card img { aspect-ratio: 4 / 5; width: 100%; object-fit: cover; }
+.donostia-card-copy { padding: 26px 20px 30px; }
+.donostia-card-copy span { color: var(--clay); font-size: 10px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; }
+.donostia-card-copy h3 { margin: 14px 0 10px; font-family: var(--serif); font-size: clamp(32px, 3vw, 40px); font-weight: 500; }
+.donostia-card-copy p { margin: 0; color: var(--muted); line-height: 1.7; }
+.donostia-quote { text-align: center; padding: 16vh 20px 12vh; }
+.donostia-banner { margin-top: 0; }
 @keyframes rise { from { opacity: 0; transform: translateY(25px); } to { opacity: 1; transform: translateY(0); } }
-@media (max-width: 700px) { .site-header { height: 70px; padding: 0 6vw; } .hero-header { color: #f8f5ef; } .menu-toggle { display: block; } .menu-toggle span { font-size: 20px; margin-left: 5px; } .site-nav { display: none; position: absolute; top: 70px; left: 0; right: 0; flex-direction: column; align-items: stretch; gap: 0; padding: 12px 6vw 20px; background: var(--paper); box-shadow: 0 12px 20px rgba(29,41,38,.08); } .site-nav.open { display: flex; } .site-nav a { padding: 13px 0; } .site-nav a.active::after { bottom: 8px; right: auto; width: 25px; } .nav-book { padding: 13px 0; border: 0; } .hero { min-height: 720px; } .hero-content { width: 100%; padding: 0 8vw 70px; } .hero h1 { font-size: clamp(62px, 17vw, 100px); } .hero-side-note { display: none; } .section-grid { grid-template-columns: 1fr; gap: 45px; padding: 90px 9vw; } .intro-label { grid-row: 1; } .intro-copy, .details-content { grid-column: 1; } .intro-detail { justify-self: start; } .feature-photo { height: 125vw; margin: 0; } .details { padding-top: 90px; padding-bottom: 90px; } .amenities { grid-template-columns: repeat(2, 1fr); row-gap: 27px; } .booking { display: block; padding: 90px 9vw; } .booking-action { margin-top: 55px; } .site-footer { align-items: flex-start; flex-direction: column; gap: 16px; padding: 30px 6vw; } .gallery-heading { display: block; padding: 80px 9vw 65px; } .gallery-heading h1 { font-size: clamp(68px, 18vw, 108px); } .gallery-heading-note { margin: 40px 0 0; } .gallery-grid { display: block; padding: 0 9vw 95px; } .gallery-item, .gallery-item-wide, .gallery-item-offset, .gallery-item-last { margin: 0 0 65px; } .gallery-item img, .gallery-item-wide img { aspect-ratio: 4 / 5; } .gallery-footer { display: block; padding: 0 9vw 90px; } .gallery-footer p { font-size: 28px; max-width: 250px; margin-bottom: 32px; } }
+@media (max-width: 700px) { .site-header { height: 70px; padding: 0 6vw; } .hero-header { color: #f8f5ef; } .menu-toggle { display: block; } .menu-toggle span { font-size: 20px; margin-left: 5px; } .site-nav { display: none; position: absolute; top: 70px; left: 0; right: 0; flex-direction: column; align-items: stretch; gap: 0; padding: 12px 6vw 20px; background: var(--paper); box-shadow: 0 12px 20px rgba(29,41,38,.08); } .site-nav.open { display: flex; } .site-nav a { padding: 13px 0; } .site-nav a.active::after { bottom: 8px; right: auto; width: 25px; } .nav-book { padding: 13px 0; border: 0; } .hero { min-height: 720px; } .hero-content { width: 100%; padding: 0 8vw 70px; } .hero h1 { font-size: clamp(62px, 17vw, 100px); } .hero-side-note { display: none; } .section-grid { grid-template-columns: 1fr; gap: 45px; padding: 90px 9vw; } .intro-label { grid-row: 1; } .intro-copy, .details-content { grid-column: 1; } .intro-detail { justify-self: start; } .feature-photo { height: 125vw; margin: 0; } .details { padding-top: 90px; padding-bottom: 90px; } .amenities { grid-template-columns: repeat(2, 1fr); row-gap: 27px; } .booking { display: block; padding: 90px 9vw; } .booking-action { margin-top: 55px; } .site-footer { align-items: flex-start; flex-direction: column; gap: 16px; padding: 30px 6vw; } .gallery-heading { display: block; padding: 80px 9vw 65px; } .gallery-heading h1 { font-size: clamp(68px, 18vw, 108px); } .gallery-heading-note { margin: 40px 0 0; } .gallery-grid { display: block; padding: 0 9vw 95px; } .gallery-item, .gallery-item-wide, .gallery-item-offset, .gallery-item-last { margin: 0 0 65px; } .gallery-item img, .gallery-item-wide img { aspect-ratio: 4 / 5; } .gallery-footer { display: block; padding: 0 9vw 90px; } .gallery-footer p { font-size: 28px; max-width: 250px; margin-bottom: 32px; } .donostia-hero { min-height: 68vh; padding: 22vh 9vw 7vh; } .donostia-showcase { padding-top: 90px; padding-bottom: 90px; } .donostia-moments { padding: 90px 9vw; } .donostia-moments-header { display: block; } .donostia-moments-grid { grid-template-columns: 1fr; } .donostia-side-card { justify-self: start; width: 180px; } }
